@@ -29,7 +29,7 @@ module.exports = class Cart {
       }
       cart.totalPrice = parseFloat(cart.totalPrice) + parseFloat(productPrice);
       //write it back to the file
-      console.log("cart ", cart);
+      //console.log("cart ", cart);
       fs.writeFile(p, JSON.stringify(cart), (err) => {
         console.log("error writing to cart.json: ", err);
       });
