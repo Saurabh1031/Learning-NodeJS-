@@ -7,8 +7,8 @@
             <% if(orders.length > 0 ) {%>
                 <% orders.forEach((order)=>{ %>
                     <h2>Order: #<%=order._id%></h2>
-                    <% order.items.forEach((product)=>{ %>
-                        <h3>Title: <%=product.title%></h3>
+                    <% order.products.forEach((product)=>{ %>
+                        <h3>Title: <%=product.product.title%></h3>
                         <h3>Quantity: <%=product.quantity%></h3>
                     <% }) %>
                 <% }) %>
